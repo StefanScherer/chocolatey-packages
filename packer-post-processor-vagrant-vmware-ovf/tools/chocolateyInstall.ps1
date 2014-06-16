@@ -6,9 +6,9 @@ Install-ChocolateyZipPackage "packer-post-processor-vagrant-vmware-ovf" "$url" "
 Install-ChocolateyPath $unzipLocation
 
 
-# install .packerconfig 
+# install %APPDATA%/packer.config 
 # TODO: if already exists, append the post-processor to .packerconfig
-$packerConfig = "$env:USERPROFILE\.packerconfig"
+$packerConfig = "$env:APPDATA\packer.config"
 
 $json = @"
 {
@@ -20,7 +20,8 @@ $json = @"
 
 if (!(Test-Path $packerConfig)) {
   Set-Content -path $packerConfig -value $json
-  Write-Host "Creating .packerconfig"
+  Write-Host "Creating %APPDATA%\packer.config"
 } else {
-  Write-Host "Please update your .packerconfig manually"
+  Write-Host "Please update your %APPDATA%\packer.config manually with"
+  Write-Host $json
 }
