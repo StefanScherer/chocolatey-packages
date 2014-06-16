@@ -3,7 +3,7 @@
   <metadata>
     <id>packer-post-processor-vagrant-vmware-ovf</id>
     <version>0.1.2</version>
-    <title>Packer</title>
+    <title>packer-post-processor-vagrant-vmware-ovf</title>
     <authors>Fabio Rapposelli, Stefan Scherer</authors>
     <owners>Stefan Scherer</owners>
     <summary>This packer plugin leverages VMware OVF Tool to create a vagrant-vcloud and vagrant-vcenter compatible boxes.</summary>
