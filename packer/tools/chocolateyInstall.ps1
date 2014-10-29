@@ -1,5 +1,5 @@
-$url = 'https://dl.bintray.com/mitchellh/packer/0.7.1_windows_386.zip'
-$url64bit = 'https://dl.bintray.com/mitchellh/packer/0.7.1_windows_amd64.zip'
+$url = 'https://dl.bintray.com/mitchellh/packer/0.7.2_windows_386.zip'
+$url64bit = 'https://dl.bintray.com/mitchellh/packer/0.7.2_windows_amd64.zip'
 $unzipLocation = "$env:SystemDrive\HashiCorp\packer"
 
 $packerExe = $unzipLocation + "\packer.exe"
