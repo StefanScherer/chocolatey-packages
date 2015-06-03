@@ -16,5 +16,8 @@ This plugin is used to build the boxes available at https://vagrantcloud.com/gos
     <licenseUrl>https://github.com/mitchellh/packer/blob/master/LICENSE</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <iconUrl>http://packer.io/images/logo_nav-e332793d.png</iconUrl>
-  </metadata>
+    <dependencies>
+      <dependency id="packer" />
+    </dependencies>
+    </metadata>
 </package>
