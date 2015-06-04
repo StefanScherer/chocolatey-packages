@@ -16,19 +16,19 @@ See documentation [Creating Chocolatey Packages](https://github.com/chocolatey/c
 
 ### Building Your Package
 
-Open a command line in the directory where the nuspec is and type **cpack** - that's it.
+Open a command line in the directory where the nuspec is and type
+
+```cmd
+cpack
+```
+
+That's it.
 
 ### Testing Your Package
 
+You can spin up a Vagrant box with `vagrant up` to create and test the package in a safe environment.
 To test the package you just built, with the command line still open (and in the current working directory in the same folder as the newly created `*.nupkg` file) type:  
 
 ```cmd
- cinst packageName -source %cd%
+cinst packageName -source %cd% -preRelease
 ```
-
-## Install Chocolatey
-
-```cmd
- @powershell -NoProfile -ExecutionPolicy unrestricted -Command "iex ((new-object net.webclient).DownloadString('https://chocolatey.org/install.ps1'))" && SET PATH=%PATH%;%systemdrive%\chocolatey\bin
-```
-
