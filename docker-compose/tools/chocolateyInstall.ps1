@@ -6,4 +6,4 @@ $file = "$($destination)\docker-compose.exe"
 
 if (![System.IO.Directory]::Exists($destination)) {[System.IO.Directory]::CreateDirectory($destination)}
 
-Get-ChocolateyWebFile $packageName $file $url $url64bit
+Get-ChocolateyWebFile $packageName $file $url $url64
