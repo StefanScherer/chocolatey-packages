@@ -1,6 +1,3 @@
-# otto
+# 301 MOVED PERMANENTLY
 
-[![Latest version released](https://img.shields.io/chocolatey/v/otto.svg)](https://chocolatey.org/packages/otto)
-[![Package downloads count](https://img.shields.io/chocolatey/dt/otto.svg)](https://chocolatey.org/packages/otto)
-
-Chocolatey package for [otto](https://ottoproject.io).
+I have moved the code to https://github.com/StefanScherer/choco-otto
