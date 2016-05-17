@@ -6,7 +6,7 @@ VAGRANTFILE_API_VERSION = "2"
 Vagrant.require_version ">= 1.7.0"
 
 Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
-  config.vm.box          = "windows_7"
+  config.vm.box          = "windows_10"
   config.vm.communicator = "winrm"
 
   config.vm.provider "virtualbox" do |vb|
