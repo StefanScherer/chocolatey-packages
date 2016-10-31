@@ -9,9 +9,7 @@ VMware Workstation is a commercial product. This package installs the software. 
 
 ## Download link
 
-```
-curl -v http://www.vmware.com/go/tryworkstation-win-en
-```
+Open http://www.vmware.com/go/try-workstation-en and capture the download link.
 
 ## Unattended installation
 
