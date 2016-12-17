@@ -19,7 +19,7 @@ See documentation [Creating Chocolatey Packages](https://github.com/chocolatey/c
 Open a command line in the directory where the nuspec is and type
 
 ```cmd
-cpack
+choco pack
 ```
 
 That's it.
@@ -30,5 +30,5 @@ You can spin up a Vagrant box with `vagrant up` to create and test the package i
 To test the package you just built, with the command line still open (and in the current working directory in the same folder as the newly created `*.nupkg` file) type:  
 
 ```cmd
-cinst packageName -source %cd% -preRelease
+choco install packageName -source %cd% -pre
 ```
